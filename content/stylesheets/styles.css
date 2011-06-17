@@ -1,0 +1,78 @@
+body {
+	font-size: small;
+	color: #555555;
+	line-height: 1.5em;
+}
+
+h1 {
+	font-size: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	line-height: 1.5em;
+}
+
+h2 {
+	font-size: 1.5em;
+	padding-top: 1em;
+	line-height: 1.5em;
+}
+
+p {
+	padding-bottom: 1em;
+}
+
+p {
+	padding-bottom: 1em;
+}
+
+strike {
+	
+}
+
+.question {
+	font-weight: bold;
+}
+
+.response {
+	
+}
+
+.response .responder {
+	
+}
+
+.response .response {
+	
+}
+
+#page {
+	margin: 0 auto;
+}
+
+#episode_interview_section {
+	
+}
+
+#episode_interview_section p {
+	margin-left: 215px;
+}
+
+#episode_interview_section ol {
+	margin-left: 215px;
+}
+
+#episode_interview_section ol li {
+	margin-left: 3em;
+	list-style-type: decimal;
+}
+
+#episode_interview_section p.host,
+#episode_interview_section p.guest {
+	float: left;
+	width: 200px;
+	text-align: right;
+	padding-right: 10px;
+	margin-left: 0;
+	font-weight: bold;
+}
+

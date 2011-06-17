@@ -1,27 +1,24 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>A Brand New nanoc Site - <%= @item[:title] %></title>
-    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
-    <meta name="generator" content="nanoc 3.1.7">
-  </head>
-  <body>
-    <div id="main">
-      <%= yield %>
-    </div>
-    <div id="sidebar">
-      <h2>Documentation</h2>
-      <ul>
-        <li><a href="http://nanoc.stoneship.org/docs/">Documentation</a></li>
-        <li><a href="http://nanoc.stoneship.org/docs/3-getting-started/">Getting Started</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion Group</a></li>
-        <li><a href="irc://chat.freenode.net/#nanoc">IRC Channel</a></li>
-        <li><a href="http://projects.stoneship.org/trac/nanoc/">Wiki</a></li>
-      </ul>
-    </div>
-  </body>
+		<title><%= render '_title' %></title>
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+		<link rel="shortcut icon" href="/favicon.ico" />
+
+		<meta name="keywords" content="<%= @item[:keywords] %>" />
+		<meta name="description" content="<%= @item[:description] %>" />
+
+		<link href="/stylesheets/reset.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/styles.css" media="screen" rel="stylesheet" type="text/css" />
+
+		<%= render '_analytics' %>
+	</head>
+
+	<body id="<%= @item[:body_id] || 'default' %>">		
+		<div id="page">
+			<%= yield %>
+		</div>
+	</body>
 </html>
